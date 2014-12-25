@@ -1,7 +1,9 @@
+'use strict';
+
 var index = require('../index');
 
 var testIndex = function(h, m) {
-  d = new Date(null, null, null, h, m);
+  var d = new Date(null, null, null, h, m);
   return index.getLilaIndex(d);
 };
 
