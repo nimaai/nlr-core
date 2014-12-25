@@ -2,25 +2,15 @@
 
 var timeIntervals = require('./data/data').timeIntervals;
 
-var getDayTimeInMinutes = function (hs, ms) {
+var getDayTimeInMinutes = function(hs, ms) {
   return hs * 60 + ms;
 };
 
-var getCurrentTime = function () {
-  var currentDate = new Date();
-  return [
-    currentDate.getHours(),
-    currentDate.getMinutes()
-  ];
-};
-
-exports.getLilaIndex = function () {
+exports.getLilaIndex = function(d) {
   var index, i;
-  var currentTime = getCurrentTime();
-  var currentHs = currentTime[0];
-  var currentMs = currentTime[1];
   var timeNowInMinutes =
-    getDayTimeInMinutes(currentHs, currentMs);
+    getDayTimeInMinutes(d.getHours(),
+                        d.getMinutes());
 
   index = 0;
   for (i = index; i < timeIntervals.length; i = i + 1) {
