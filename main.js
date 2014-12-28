@@ -84,14 +84,14 @@ var vishvanathDescriptions = [
 ];
 
 var longDescriptions = [];
-longDescriptions[0] = require('./data/long/nisha').data;
-longDescriptions[1] = require('./data/long/nishanta').data;
-longDescriptions[2] = require('./data/long/prataha').data;
-longDescriptions[3] = require('./data/long/purvahna').data;
-longDescriptions[4] = require('./data/long/madhyahna').data;
-longDescriptions[5] = require('./data/long/aparahna').data;
-longDescriptions[6] = require('./data/long/shayana').data;
-longDescriptions[7] = require('./data/long/pradosha').data;
+longDescriptions[0] = require('./data/long/nisha');
+longDescriptions[1] = require('./data/long/nishanta');
+longDescriptions[2] = require('./data/long/prataha');
+longDescriptions[3] = require('./data/long/purvahna');
+longDescriptions[4] = require('./data/long/madhyahna');
+longDescriptions[5] = require('./data/long/aparahna');
+longDescriptions[6] = require('./data/long/shayana');
+longDescriptions[7] = require('./data/long/pradosha');
 
 // ***************************************************
 
