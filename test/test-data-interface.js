@@ -2,8 +2,13 @@
 
 var main = require('../main');
 
+var getLilaRandomIndex = function(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
 var testDataInterface = function(fn) {
-  return fn(new Date());
+  var i = getLilaRandomIndex(0, 8);
+  return fn(i);
 };
 
 exports.testDataInterface = function(test) {

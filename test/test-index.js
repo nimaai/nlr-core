@@ -1,6 +1,6 @@
 'use strict';
 
-var getLilaIndex = require('../main').getLilaIndex;
+var getLilaIndex = require('../lib/index').getLilaIndex;
 
 var testIndex = function(h, m) {
   var d = new Date(null, null, null, h, m);

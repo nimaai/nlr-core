@@ -1,35 +1,6 @@
 'use strict';
 
 var timeIntervals = require('./data/time-intervals');
-
-var getDayTimeInMinutes = function(hs, ms) {
-  return hs * 60 + ms;
-};
-
-var getLilaIndex = function(d) {
-  var index, i;
-  var timeNowInMinutes =
-    getDayTimeInMinutes(d.getHours(),
-                        d.getMinutes());
-
-  index = 0;
-  for (i = index; i < 8; i = i + 1) {
-    var bh = timeIntervals[i][0][0]
-      , bm = timeIntervals[i][0][1]
-      , eh = timeIntervals[i][1][0]
-      , em = timeIntervals[i][1][1];
-
-    if (timeNowInMinutes < getDayTimeInMinutes(eh, em)) {
-      index = i;
-      break;
-    }
-  }
-
-  return index;
-};
-
-// ***************************************************
-
 var sanskritNames = require('./data/sanskrit-names');
 var englishNames = require('./data/english-names');
 var shortDescriptions = require('./data/short-descriptions');
@@ -49,33 +20,32 @@ longDescriptions[7] = require('./data/long/pradosha');
 // ***************************************************
 
 module.exports = {
-  getLilaIndex: getLilaIndex,
 
-  getTimeInterval: function(d) {
-    return timeIntervals[getLilaIndex(d)];
+  getTimeInterval: function(i) {
+    return timeIntervals[i];
   },
 
-  getSanskritName: function(d) {
-    return sanskritNames[getLilaIndex(d)];
+  getSanskritName: function(i) {
+    return sanskritNames[i];
   },
 
-  getEnglishName: function(d) {
-    return englishNames[getLilaIndex(d)];
+  getEnglishName: function(i) {
+    return englishNames[i];
   },
 
-  getShortDescription: function(d) {
-    return shortDescriptions[getLilaIndex(d)];
+  getShortDescription: function(i) {
+    return shortDescriptions[i];
   },
 
-  getRupaDescription: function(d) {
-    return rupaDescriptions[getLilaIndex(d)];
+  getRupaDescription: function(i) {
+    return rupaDescriptions[i];
   },
 
-  getVishvanathDescription: function(d) {
-    return vishvanathDescriptions[getLilaIndex(d)];
+  getVishvanathDescription: function(i) {
+    return vishvanathDescriptions[i];
   },
 
-  getLongDescription: function(d) {
-    return longDescriptions[getLilaIndex(d)];
+  getLongDescription: function(i) {
+    return longDescriptions[i];
   }
 }
