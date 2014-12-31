@@ -47,5 +47,8 @@ module.exports = {
 
   getLongDescription: function(i) {
     return longDescriptions[i];
-  }
+  },
+
+  time: require('./lib/time.js')
+
 }
