@@ -21,6 +21,8 @@ longDescriptions[7] = require('./data/long/pradosha');
 
 module.exports = {
 
+  getLilaIndex: require('./lib/index').getLilaIndex,
+
   getTimeInterval: function(i) {
     return timeIntervals[i];
   },
