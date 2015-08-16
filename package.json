@@ -2,26 +2,22 @@
   "name": "nlr",
   "version": "1.1.0",
   "description": "Nitya Lila Reminder Core",
-
   "main": "main.js",
-
   "scripts": {
     "test": "nodeunit"
   },
-
   "repository": {
     "type": "git",
     "url": "https://github.com/nimaai/nlr-js.git"
   },
-
   "author": "nimaai",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nimaai/nlr-js/issues"
   },
   "homepage": "https://github.com/nimaai/nlr-js",
-
   "devDependencies": {
+    "coffeeify": "^1.1.0",
     "nodeunit": "caolan/nodeunit"
   }
 }
