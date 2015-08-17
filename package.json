@@ -16,7 +16,8 @@
     "url": "https://github.com/nimaai/nlr-js/issues"
   },
   "homepage": "https://github.com/nimaai/nlr-js",
-  "devDependencies": {
+  "dependencies": {
+    "coffee-script": "^1.9.3",
     "nodeunit": "^0.9.1"
   }
 }
