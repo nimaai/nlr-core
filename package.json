@@ -18,6 +18,6 @@
   "homepage": "https://github.com/nimaai/nlr-js",
   "devDependencies": {
     "coffeeify": "^1.1.0",
-    "nodeunit": "caolan/nodeunit"
+    "nodeunit": "^0.9.1"
   }
 }
