@@ -1,4 +1,4 @@
-getLilaProgress = require('../lib/index').getLilaProgress
+getLilaProgress = require('../lib/progress').getLilaProgress
 
 testLilaProgress = (h, m) ->
   d = new Date(null, null, null, h, m)

@@ -1,11 +1,11 @@
-timeIntervals = require('../data/time-intervals')
-
-getDayTimeInMinutes = (hs, ms) -> hs * 60 + ms
-
 exports.getLilaIndex = (d) ->
+  timeIntervals = require('../data/time-intervals')
+  getDayTimeInMinutes =
+    require('./time').getDayTimeInMinutes
   timeNowInMinutes =
     getDayTimeInMinutes d.getHours(), d.getMinutes()
 
+  index = 0
   for i in [0..7]
     bh = timeIntervals[i][0][0]
     bm = timeIntervals[i][0][1]
@@ -13,4 +13,7 @@ exports.getLilaIndex = (d) ->
     em = timeIntervals[i][1][1]
 
     if timeNowInMinutes < getDayTimeInMinutes(eh, em)
-      return i
+      index = i
+      break
+
+  index

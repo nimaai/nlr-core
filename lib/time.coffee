@@ -4,6 +4,8 @@ formatTime = (h, m) ->
 
 exports.formatTime = formatTime;
 
+exports.getDayTimeInMinutes = (hs, ms) -> hs * 60 + ms
+
 exports.formatTimeInterval = (interval) ->
   bh = interval[0][0]
   bm = interval[0][1]
