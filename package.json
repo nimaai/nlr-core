@@ -2,9 +2,9 @@
   "name": "nlr",
   "version": "1.1.0",
   "description": "Nitya Lila Reminder Core",
-  "main": "main.js",
+  "main": "main.coffee",
   "scripts": {
-    "test": "nodeunit"
+    "test": "./node_modules/.bin/nodeunit test"
   },
   "repository": {
     "type": "git",
