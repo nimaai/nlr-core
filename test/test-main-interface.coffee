@@ -8,9 +8,10 @@ testDataInterface = (fn) ->
   fn(i)
 
 exports.testMainInterface = (test) ->
-  test.expect(17)
+  test.expect(18)
 
   test.ok(0 <= main.getLilaIndex(new Date()) <= 7)
+  test.ok(0 <= main.getLilaProgress(new Date()) <= 100)
 
   test.ok(testDataInterface(main.getTimeInterval) != null)
   test.ok(testDataInterface(main.getTimeInterval).length > 0)
