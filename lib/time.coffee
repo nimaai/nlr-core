@@ -1,5 +1,5 @@
 formatTime = (h, m) ->
-  m = m < 10 ? '0' + m : m
+  m = "0#{m}" if m < 10
   "#{h}:#{m}"
 
 exports.formatTime = formatTime;
