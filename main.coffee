@@ -1,23 +1,23 @@
-timeIntervals = require('./data/time-intervals')
-sanskritNames = require('./data/sanskrit-names')
-englishNames = require('./data/english-names')
-shortDescriptions = require('./data/short-descriptions')
-rupaDescriptions = require('./data/rupa-descriptions')
-vishvanathDescriptions = require('./data/vishvanath-descriptions')
+timeIntervals = require('./data/time-intervals.json')
+sanskritNames = require('./data/sanskrit-names.json')
+englishNames = require('./data/english-names.json')
+shortDescriptions = require('./data/short-descriptions.json')
+rupaDescriptions = require('./data/rupa-descriptions.json')
+vishvanathDescriptions = require('./data/vishvanath-descriptions.json')
 
 longDescriptions = []
-longDescriptions[0] = require('./data/long/nisha')
-longDescriptions[1] = require('./data/long/nishanta')
-longDescriptions[2] = require('./data/long/prataha')
-longDescriptions[3] = require('./data/long/purvahna')
-longDescriptions[4] = require('./data/long/madhyahna')
-longDescriptions[5] = require('./data/long/aparahna')
-longDescriptions[6] = require('./data/long/shayana')
-longDescriptions[7] = require('./data/long/pradosha')
+longDescriptions[0] = require('./data/long/nisha.json')
+longDescriptions[1] = require('./data/long/nishanta.json')
+longDescriptions[2] = require('./data/long/prataha.json')
+longDescriptions[3] = require('./data/long/purvahna.json')
+longDescriptions[4] = require('./data/long/madhyahna.json')
+longDescriptions[5] = require('./data/long/aparahna.json')
+longDescriptions[6] = require('./data/long/shayana.json')
+longDescriptions[7] = require('./data/long/pradosha.json')
 
 module.exports =
-  getLilaIndex: require('./lib/index').getLilaIndex
-  getLilaProgress: require('./lib/progress').getLilaProgress
+  getLilaIndex: require('./lib/index.coffee').getLilaIndex
+  getLilaProgress: require('./lib/progress.coffee').getLilaProgress
   getTimeInterval: (i) -> timeIntervals[i]
   getSanskritName: (i) -> sanskritNames[i]
   getEnglishName: (i) -> englishNames[i]
@@ -25,4 +25,4 @@ module.exports =
   getRupaDescription: (i) -> rupaDescriptions[i]
   getVishvanathDescription: (i) -> vishvanathDescriptions[i]
   getLongDescription: (i) -> longDescriptions[i]
-  time: require('./lib/time')
+  time: require('./lib/time.coffee')

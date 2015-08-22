@@ -1,7 +1,7 @@
 exports.getLilaIndex = (d) ->
   timeIntervals = require('../data/time-intervals')
   getDayTimeInMinutes =
-    require('./time').getDayTimeInMinutes
+    require('./time.coffee').getDayTimeInMinutes
   timeNowInMinutes =
     getDayTimeInMinutes d.getHours(), d.getMinutes()
 

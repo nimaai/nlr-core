@@ -1,7 +1,7 @@
 exports.getLilaProgress = (d) ->
   timeIntervals = require('../data/time-intervals')
-  getDayTimeInMinutes = require('./time').getDayTimeInMinutes
-  i = require('./index').getLilaIndex(d)
+  getDayTimeInMinutes = require('./time.coffee').getDayTimeInMinutes
+  i = require('./index.coffee').getLilaIndex(d)
 
   bh = timeIntervals[i][0][0]
   bm = timeIntervals[i][0][1]
