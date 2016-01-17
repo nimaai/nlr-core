@@ -1,7 +1,7 @@
 module.exports = {
   output: {
     library: 'nlrCore',
-    libraryTarget: 'commonjs'
+    libraryTarget: 'commonjs2'
   },
   resolve: {
     // we can leave off file extensions for js-like sources:
