@@ -1,7 +1,9 @@
 module.exports = {
-  target: 'node',
+  entry: './main-limited.coffee',
   output: {
-    libraryTarget: 'commonjs'
+    filename: 'main-limited.js',
+    path: './dist/cljs',
+    library: 'nlrCore'
   },
   resolve: {
     // we can leave off file extensions for js-like sources:

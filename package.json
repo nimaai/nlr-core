@@ -2,7 +2,7 @@
   "name": "nlr-core",
   "version": "1.1.4",
   "description": "Nitya Lila Reminder Core",
-  "main": "dist/main.js",
+  "main": "dist/node/main.js",
   "scripts": {
     "test": "nodeunit test"
   },
