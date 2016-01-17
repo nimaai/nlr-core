@@ -1,4 +1,4 @@
-var nlrCore =
+exports["nlrCore"] =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
